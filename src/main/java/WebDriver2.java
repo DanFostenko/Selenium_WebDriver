@@ -11,7 +11,7 @@ public class WebDriver2 {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\bfostenko\\IdeaProjects\\testselenium\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное ожидание элементов до их появления
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //неявное - ожидание при каждом поиске элементов до их появления
 
 //        driver.manage().window().maximize(); //управление размером окна, максимальное
         driver.manage().window().setSize(new Dimension(900,900));
